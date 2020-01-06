@@ -91,6 +91,9 @@
   padding: 10px 0;
   text-align: center;
 }
+:host ::ng-deep .mat-sort-header-container {
+  justify-content: center;
+}
 @media (min-width: 768px) {
   .header-left {
     display: block;
@@ -102,7 +105,7 @@
   .header-right {
     padding: 0 20px;
   }
-  .mat-header-cell.custom-th {
+  .custom-th {
     font-size: 18px;
   }
 }

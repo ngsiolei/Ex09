@@ -4,10 +4,11 @@ import { NgModule } from "@angular/core";
 import { AppComponent } from "./app.component";
 import { NoopAnimationsModule } from "@angular/platform-browser/animations";
 import { MatTableModule } from "@angular/material/table";
+import { MatSortModule } from "@angular/material/sort";
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, NoopAnimationsModule, MatTableModule],
+  imports: [BrowserModule, NoopAnimationsModule, MatTableModule, MatSortModule],
   providers: [],
   bootstrap: [AppComponent]
 })
