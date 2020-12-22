@@ -8,7 +8,7 @@
     </div>
     <div class="clear"></div>
   </div>
-  <table mat-table [dataSource]="dataSource" matSort class="custom-table">
+  <table mat-table [dataSource]="dataSource" class="custom-table">
     <!--- Note that these columns can be defined in any order.
         The actual rendered columns are set as a property on the row definition" -->
 
@@ -17,8 +17,7 @@
       <th
         mat-header-cell
         *matHeaderCellDef
-        mat-sort-header
-        class="custom-th custom-th-sort first-col"
+        class="text-center custom-th first-col"
       >
         No.
       </th>
@@ -32,8 +31,7 @@
       <th
         mat-header-cell
         *matHeaderCellDef
-        mat-sort-header
-        class="custom-th custom-th-sort second-col"
+        class="text-center custom-th second-col"
       >
         Name
       </th>

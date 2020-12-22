@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewChild } from "@angular/core";
 import { DataService, PeriodicElement } from "./data.service";
 import { MatTableDataSource } from "@angular/material/table";
-import { MatSort } from "@angular/material/sort";
 import { interval } from "rxjs";
 
 const ITEMS_PER_PAGE = 9;
@@ -20,11 +19,9 @@ export class AppComponent implements OnInit {
   secondsLeft = SECONDS_PER_PAGE;
   timer = interval(1000);
 
-  @ViewChild(MatSort, { static: true }) sort: MatSort;
   constructor(private dataService: DataService) {}
 
   ngOnInit() {
-    this.dataSource.sort = this.sort;
     this.getData(true);
     this.startTimer();
   }
