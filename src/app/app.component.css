@@ -47,16 +47,16 @@
 .custom-table {
   width: 100%;
 }
-.custom-th {
+th.custom-th {
   background-color: #222;
   color: #fff;
   font-size: 16px;
   line-height: 30px;
 }
-.custom-tr {
+tr.custom-tr {
   height: auto;
 }
-.custom-td {
+td.custom-td {
   border: 0;
   color: #111;
   font-size: 16px;
@@ -102,7 +102,7 @@
   .header-right {
     padding: 0 20px;
   }
-  .custom-th {
+  th.custom-th {
     font-size: 18px;
   }
 }
